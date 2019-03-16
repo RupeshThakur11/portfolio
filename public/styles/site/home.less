@@ -1,0 +1,52 @@
+.home-container {
+		@media screen and (min-width: 506px) {
+				margin: 120px auto;
+		}
+		@media screen and (max-width: 505px) {
+				margin: 0 auto;
+		}
+
+		&__links {
+				margin: 30px auto;
+				@media screen and (min-width: 412px) {
+						width: 367px;
+				}
+				@media screen and (max-width: 411px) {
+						width: 100%;
+				}
+
+				.btn.btn-primary {
+						@media screen and (min-width: 412px) {
+								display: inline-block;
+								margin: 0 10px;
+						}
+						@media screen and (max-width: 411px) {
+								display: block;
+								margin: 10px auto;
+								width: 50%;
+						}
+
+						&:hover {
+								@media screen and (min-width: 412px) {
+										margin: 0;
+								}
+								@media screen and (max-width: 411px) {
+										width: 60%;
+								}
+						}
+				}
+		}
+}
+
+#site-title {
+		color: @white;
+		font-size: 72px;
+		text-align: center;
+}
+
+#site-subtitle {
+		color: @light-grey;
+		font-size: 19px;
+		font-weight: normal;
+		text-align: center;
+}

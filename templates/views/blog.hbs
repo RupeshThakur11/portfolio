@@ -1,0 +1,16 @@
+<div class="container">
+		<h1 class="text-center">Blog</h1>
+		<div class="row">
+				<div class="blog">
+						{{# each data.posts.results}}
+						<div data-ks-editable="{{#if ../user}}{{adminEditableUrl ../../user _id}}{{/if}}" class="post">
+								<a href="{{postUrl slug}}">
+										<h2 class="title">{{{title}}}</h2>
+										<div class="brief">{{{content.brief}}}</div>
+								</a>
+						</div>
+						{{/each}}
+				</div>
+		</div>
+		{{>pagination}}
+</div>
