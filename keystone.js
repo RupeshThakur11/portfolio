@@ -20,7 +20,7 @@ keystone.init({
 		'favicon': 'public/favicon.ico',
 		'views': 'templates/views',
 		'view engine': 'hbs',
-		'mongo': process.env.MONGO_URI || process.env.MONGOLAB_URI ||'mongodb://localhost:27017/portfoliowebsite',
+		'mongo': process.env.MONGO_URI || process.env.MONGOLAB_URI ||'mongodb://portfolio:Rupesh123@ds151207.mlab.com:51207/portfolio',
 		'custom engine': handlebars.create({
 				layoutsDir: 'templates/views/layouts',
 				partialsDir: 'templates/views/partials',
